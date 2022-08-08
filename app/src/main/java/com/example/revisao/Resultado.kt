@@ -4,11 +4,18 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 
 class Resultado : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultado)
+
+        val edtResultado : EditText = findViewById(R.id.edtResultado)
+        val intent = intent
+        val inputNome = intent.getStringExtra("nome")
+
+        edtResultado.setText("" + inputNome.toString())
 
         val btnVoltar: Button = findViewById(R.id.btnVoltar)
 

@@ -17,12 +17,14 @@ class MainActivity : AppCompatActivity() {
         val txtBairro:TextView = findViewById(R.id.edtBairro)
         val txtCEP:TextView = findViewById(R.id.edtCEP)
         val txtCidade:TextView = findViewById(R.id.edtCidade)
+        val edtNome: TextView = findViewById(R.id.edtNome)
 
         val btnCadastrar:Button = findViewById(R.id.btnCadastrar)
 
         btnCadastrar.setOnClickListener {
             //Toast.makeText(this, "Nome: " + txtNome.text.toString(), Toast.LENGTH_LONG).show()
             val intent = Intent(this, Resultado::class.java)
+            intent.putExtra("nome", edtNome.text.toString())
             startActivity(intent)
         }
     }

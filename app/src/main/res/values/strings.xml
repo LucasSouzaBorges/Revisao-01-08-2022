@@ -5,6 +5,8 @@
     <string name="txtBairro">Bairro</string>
     <string name="txtCEP">CEP</string>
     <string name="txtCidade">Cidade</string>
+    <string name="txtResultado">Resultado</string>
     <string name="btnCadastrar">Cadastrar</string>
     <string name="btnVoltar">Voltar</string>
+
 </resources>
